@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mobile_header_div">
+        <i class="fas fa-times" id="cancel_button"></i>
+        <div class="mobile_header_ul">
+            <div class="mobile_search_div">
+                <input type="search" name="" id="" class="mobile_search" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="select_mobile_div">
+                <button id="mobile_menu">Main Menu</button>
+                <button id="mobile_categories">All Categories</button>
+                
+            </div>
+            <div class="mobile_div_a" id="mobile_div_a">
+                <ul>
+                    <li><a class="header_home_li" href="http://##">Home</a></li>
+                    <li class="header_shop_li">Shop <i class="fas fa-angle-right"></i></li>
+                    <li class="header_vendor_li">Vendor <i class="fas fa-angle-right"></i></li>
+                    <li class="header_blog_li">Blog <i class="fas fa-angle-right"></i></li>
+                    <li class="header_pages_li">Pages <i class="fas fa-angle-right"></i></li>
+                    <li class="header_elements_li">Elements <i class="fas fa-angle-right"></i></li>
+                </ul>
+                
+
+            </div>
+            <div class="mobile_categories_a" id="mobile_div_b">
+                <ul class="mobile_categories_ul">
+                    <li><a href="http://" class="categories_a"><span><i class="fas fa-tshirt all"></i>Fashion</span><i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i class="fas fa-home all"></i>Home and
+                                Garden</span><i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i
+                                    class="fas fa-blender all"></i>Electronics</span><i
+                                class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i
+                                    class="fas fa-procedures all"></i>Furniture</span><i
+                                class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i class="fab fa-pied-piper-alt all"></i>Toy &
+                                Babycare</span><i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i
+                                    class="fas fa-basketball-ball all"></i>Sports</span><i
+                                class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i class="fas fa-hospital all"></i>Health &
+                                Beauty</span><i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i class="fas fa-camera all"></i>Camera And
+                                Photos</span><i class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i
+                                    class="fas fa-microphone all"></i>Speaker</span><i
+                                class="fas fa-angle-right"></i></a></li>
+                    <li><a href="http://" class="categories_a"><span><i class="fas fa-flask all"></i>Electric
+                                Kettle</span><i class="fas fa-angle-right"></i></a></li>
+
+                </ul>
+                <p><a href="http://">View All Categories</a></p>
+            </div>
+            
+
+        </div>
+    </div>
+    <style>
+        #cancel_button{
+            position: relative;
+            top: 10px;
+            left: 45%;
+            font-size: 1.3rem;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .mobile_header_div {
+            color: #ffffff;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        
+        }
+        .mobile_header_ul{
+            width: 90%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+    
+            flex-direction: column;
+
+        }
+        .mobile_search_div{
+            width: 90%;
+            margin: 30px 0;
+            padding: 0 7px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            
+        }
+        .mobile_search{
+            width: 100%;
+            padding: 10px 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            font-size: 1rem;
+            /* border: 1px solid rgba(255, 255, 255, 0.2); */
+        }
+        .select_mobile_div{
+            width: 90%;
+            padding: 0 5%;
+        }
+        .select_mobile_div button{
+            width: 49%;
+            border: none;
+            background-color: transparent;
+            padding: 0 0 5px 0;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+        #mobile_menu{
+            border-bottom: 3px solid orangered;
+        }
+        #mobile_categories{
+            border-bottom: 3px solid #ffffff;
+        }
+        .mobile_header_ul li {
+            list-style: none;
+            padding: 15px 0;
+        }
+        .mobile_div_a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            background-color: #222;
+            top: 165px;
+            left:0;
+            z-index: 100;
+            padding: 0;
+            margin: 0;
+        }
+        .mobile_div_a ul{
+            margin: 0;
+            padding: 0;
+        }
+        .mobile_div_a ul li{
+            width: 90%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 10% 10px 20px ;
+        }
+        .mobile_categories_a{
+            color: #ffffff;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 165px;
+            left:0;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+        .mobile_categories_a ul{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .mobile_categories_a ul li span i{  
+            margin: 0;
+            padding: 0 10px;
+        }
+        .mobile_categories_a ul li{
+            margin: 0;
+            padding: 13px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .mobile_categories_a ul li a{
+            width: 90%;
+           
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 ;
+            margin: 0;
+            
+        }
+        .mobile_categories_a p a{
+            font-size: 1.2rem;
+            text-align: left;
+            color: orangered;
+        }
+    </style>
+    <script>
+        document.getElementById('mobile_menu').addEventListener('click',()=>{
+            document.getElementById('mobile_div_a').setAttribute('style','z-index: 10000')
+            document.getElementById('mobile_div_b').setAttribute('style','z-index: 1000')
+            document.getElementById('mobile_menu').setAttribute('style','border-bottom:3px solid orangered')
+            document.getElementById('mobile_categories').setAttribute('style','border-bottom:3px solid white')
+        })
+        document.getElementById('mobile_categories').addEventListener('click',()=>{
+            document.getElementById('mobile_div_b').setAttribute('style','z-index: 1000000')
+            document.getElementById('mobile_div_a').setAttribute('style','z-index: 1000')
+            document.getElementById('mobile_categories').setAttribute('style','border-bottom:3px solid orangered')
+            document.getElementById('mobile_menu').setAttribute('style','border-bottom:3px solid white')
+        })
+    </script>
+</body>
+
+</html>
